@@ -1,0 +1,113 @@
+.floating-button {
+    position: fixed;
+    bottom: 65px; /* Jarak dari bawah */
+    right: 65px; /* Jarak dari kanan */
+    z-index: 1000; /* Pastikan tombol berada di atas elemen lain */
+    padding: 10px 20px; /* Padding untuk tombol */
+    border-radius: 50px; /* Sudut tombol yang membulat */
+    text-align: center; /* Teks di tengah */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek */
+    border: none; /* Menghilangkan border */
+    background-color: white; /* Warna latar belakang tombol */
+    font-size: 24px; /* Ukuran ikon */
+    color: black; /* Warna ikon */
+    text-decoration: none; /* Menghilangkan garis bawah */
+}
+
+.floating-button a:hover {
+    color: black; /* Warna saat hover */
+}
+
+.floating-button a i {
+    font-weight: bold; /* Mencoba untuk membuat ikon bold */
+}
+
+.dropdown-toggle::after {
+    display: none; /* Menghilangkan panah dropdown */
+}
+
+/* Gaya untuk ikon hati default */
+.btn-link .bi-suit-heart {
+    color: gray; /* Warna default */
+    transition: color 0.3s; /* Efek transisi */
+}
+
+/* Gaya untuk ikon hati saat disukai */
+.btn-link.liked .bi-suit-heart {
+    color: red; /* Warna saat disukai */
+}
+
+.btn-link {
+    margin-right: 30px; /* Menambahkan jarak di sebelah kanan setiap ikon */
+}
+
+.navbar {
+    background-color: #f8f9fa; /* Warna latar belakang navbar */
+    position: fixed; /* Mengatur posisi navbar menjadi tetap */
+    top: 0; /* Menempatkan navbar di bagian atas */
+    width: 100%; /* Lebar navbar 100% */
+    z-index: 1000; /* Memastikan navbar di atas elemen lain */
+}
+
+/* Menambahkan jarak di bawah navbar agar konten tidak tertutup */
+body {
+    padding-top: 60px; /* Sesuaikan dengan tinggi navbar */
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #f8eee6;
+}
+
+.custom-img {
+    width: 100%; /* Mengatur lebar gambar 100% dari kolom */
+    height: 150px; /* Mengatur tinggi gambar tetap */
+    object-fit: cover; /* Memastikan gambar menutupi area yang tersedia */
+}
+
+.comment-section {
+    margin-top: 20px;
+}
+
+.comment-input {
+    display: flex;
+    align-items: center;
+}
+
+.comments-list {
+    margin-top: 20px;
+}
+
+.comment {
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0;
+}
+
+.comment p {
+    margin: 0;
+}
+
+.back-button {
+    position: fixed;
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    background-color: #007bff; /* Warna tombol */
+    color: #fff;
+    font-size: 24px; /* Ukuran font ikon */
+    padding: 15px; /* Padding untuk memperbesar tombol */
+    border-radius: 50%; /* Membuat tombol berbentuk bulat */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan */
+    text-align: center;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+.back-button:hover {
+    transform: scale(1.1); /* Memperbesar saat hover */
+    background-color: #0056b3; /* Warna saat dihover */
+}
+
+.navbar-custom {
+    background-color: #baa499; 
+    color: #ffffff; 
+}
